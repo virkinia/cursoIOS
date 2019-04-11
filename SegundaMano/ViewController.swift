@@ -71,9 +71,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBAction func btnSave(_ sender: Any) {
 
-        let datosFormulario: Coche = Coche(
-            maker.text ?? "", model.text ?? "" ,
-            platter.text ?? "", year.text ?? "", Double(price.text ?? "0"))
+        guard let model = model.text,
+              let year = year.text,
+              let maker = maker.text,
+              !year.isEmpty,
+              !model.isEmpty
+              else {
+                let alert = UIAlertController(title: "Formulario Incompleto", message: "Debe rellanar los campos obligatorios", preferredStyle: .alert)
+
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
+             return
+        }
+
+        let datosFormulario: Coche = Coche(5, maker, model, year, 30)
+
 
             hacerPost(car: datosFormulario)
 
@@ -134,7 +146,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
                 OperationQueue.main.addOperation {
-                    //self.tableView.reloadData()
+                    self.tableView.reloadData()
                 }
 
             } catch {

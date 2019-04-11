@@ -11,6 +11,7 @@
 		D98E7198225F8C2E005C330E /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D98E7197225F8C01005C330E /* Amatic-Bold.ttf */; };
 		D98E7199225F8CD4005C330E /* Amatic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D98E7196225F8C01005C330E /* Amatic-Regular.ttf */; };
 		D98E719B225F99CF005C330E /* Camion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E719A225F99CF005C330E /* Camion.swift */; };
+		D98E719D225FA040005C330E /* Vehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E719C225FA040005C330E /* Vehiculo.swift */; };
 		D9943F05225B99DE00A8DBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9943F04225B99DE00A8DBEC /* AppDelegate.swift */; };
 		D9943F07225B99DE00A8DBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9943F06225B99DE00A8DBEC /* ViewController.swift */; };
 		D9943F0A225B99DE00A8DBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9943F08225B99DE00A8DBEC /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		D98E7196225F8C01005C330E /* Amatic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Regular.ttf"; sourceTree = "<group>"; };
 		D98E7197225F8C01005C330E /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		D98E719A225F99CF005C330E /* Camion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camion.swift; sourceTree = "<group>"; };
+		D98E719C225FA040005C330E /* Vehiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehiculo.swift; sourceTree = "<group>"; };
 		D9943F01225B99DD00A8DBEC /* SegundaMano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegundaMano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9943F04225B99DE00A8DBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9943F06225B99DE00A8DBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				D98E719A225F99CF005C330E /* Camion.swift */,
 				D9CEF879225E4D1F009FB5A6 /* CocheStruct.swift */,
 				D9943F08225B99DE00A8DBEC /* Main.storyboard */,
+				D98E719C225FA040005C330E /* Vehiculo.swift */,
 				D9943F0B225B99EB00A8DBEC /* Assets.xcassets */,
 				D9943F0D225B99EB00A8DBEC /* LaunchScreen.storyboard */,
 				D9943F10225B99EB00A8DBEC /* Info.plist */,
@@ -162,6 +165,7 @@
 			files = (
 				D9943F07225B99DE00A8DBEC /* ViewController.swift in Sources */,
 				D9521735225CF7CD009EBAD3 /* Coche.swift in Sources */,
+				D98E719D225FA040005C330E /* Vehiculo.swift in Sources */,
 				D9943F05225B99DE00A8DBEC /* AppDelegate.swift in Sources */,
 				D98E719B225F99CF005C330E /* Camion.swift in Sources */,
 				D9CEF87A225E4D1F009FB5A6 /* CocheStruct.swift in Sources */,

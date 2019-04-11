@@ -8,42 +8,30 @@
 
 import Foundation
 
-class Coche {
+class Coche : Vehiculo {
 
-    var maker: String
-    var model: String
-    var platter: String
-    var year: String
-    var price: Double?
-
-    convenience init (_ maker: String, _ model: String, _ platter: String) {
+    var platter: String?
+    let puertas: Int
 
 
-        self.init(maker,model,platter, "YYYY", 2000);
 
+    init ( _ puertas: Int, _ maker: String, _ model: String,_ year: String, _ kilometros: Int) {
 
-    }
-   
-
-    init ( _ maker: String, _ model: String,_ platter: String, _ year: String, _ price:Double? ) {
-        self.maker = maker
-        self.model = model
-        self.platter = platter
-        self.year = year
-        self.price = price
-
+        self.puertas = puertas
+        self.platter = platter ?? ""
+        super.init(maker, model , year, kilometros)
     }
 
 
-    func toString() ->  String {
-        return "Soy un \(self.maker)"
+    override var description: String {
+        return "Vehiculo " + super.description + ". La matricula es \(String(self.platter!)) y tiene \(String(self.puertas)) puertas."
     }
 
     func toJson() -> Data? {
         let json: [String: Any]  = [
             "maker":self.maker,
             "model": self.model,
-            "platter":self.platter,
+            "platter": self.platter!,
             "year":self.year,
             "price":self.price ?? 0
         ]
