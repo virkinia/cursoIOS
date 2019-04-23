@@ -44,8 +44,9 @@
 		D9D19046226F7EDF0045F480 /* hello.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hello.html; sourceTree = "<group>"; };
 		D9D19047226F7EDF0045F480 /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		D9D19048226F7EDF0045F480 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		D9D1904F226F7EF10045F480 /* Repaso1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Repaso1.playground; sourceTree = "<group>"; };
+		D9D1904F226F7EF10045F480 /* Repaso1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Repaso1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D9D19050226F7EF10045F480 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		D9D19051226F80680045F480 /* Structs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Structs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		D9D1904E226F7EF10045F480 /* Ejercicios */ = {
 			isa = PBXGroup;
 			children = (
+				D9D19051226F80680045F480 /* Structs.playground */,
 				D9D1904F226F7EF10045F480 /* Repaso1.playground */,
 				D9D19050226F7EF10045F480 /* MyPlayground.playground */,
 			);
